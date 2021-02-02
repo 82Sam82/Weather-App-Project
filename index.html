@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+
+    <title>W</title>
+    <link rel="stylesheet" href="src/styles.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=PT+Sans+Caption:wght@400;700&family=Poiret+One&family=Spartan&display=swap"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/daf86d9149.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row body">
+            <div class="col-6 weather-today">
+                <div class="card current-weather">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <span id="current-city">
+                                London
+                            </span>
+                            <br>
+                            <span class="date" id="date-time">Saturday, 9th January, 2021
+                                <br>
+                                10.03am</span>
+                            <hr>
+                            <div class="daily-temp">
+                                <span class="description" id="weather-descript"> Cloudy </span>
+                                <br>
+                                <span class="temp" id="current-temp">
+                                    3
+                                </span>
+                                <span class="tempMetrics">
+                                    <span id="celcius">°C</span>
+                                </span>
+                            </div>
+                        </h5>
+                        <div class="minmax">
+                            <div class="row">
+                                <div class="col-4">
+                                    <p class="card-text">
+                                        <span class="metric"> High </span>
+                                        <br>
+                                        39°C
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="card-text">
+                                        <span class="metric"> Low </span>
+                                        <br>
+                                        25°C
+                                    </p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="card-text">
+                                        <span class="metric"> 🌧️ </span>
+                                        <br>
+                                        4%
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://images.pexels.com/photos/1152359/pexels-photo-1152359.jpeg?cs=srgb&dl=pexels-marctutorials-1152359.jpg&fm=jpg"
+                        class="card-img-bottom" alt="blue sky sun and palm trees">
+                </div>
+            </div>
+            <div class="col-6 days-ahead">
+                <div class="row">
+                    <div class="col-9">
+                        <form class="enterCity" id="enter-city">
+                            <input type="search" placeholder="Enter city....." class="city" id="city-form" />
+                    </div>
+                    <div class="col-3 button">
+                        <input type="submit" value="Go!" class="formControl">
+                    </div>
+                    </form>
+                </div>
+                <div class="week-ahead">
+                    <div class="row forward">
+                        <div class="col-3">
+                            <ul class="day">
+                                <li>Sunday</Li>
+                                <li>Monday</li>
+                                <Li>Tuesday</Li>
+                                <li>Wednesday</li>
+                                <Li>Thursday</Li>
+                                <li>Friday</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul class="emoji">
+                                <li>☀️</Li>
+                                <li>☀️</li>
+                                <Li>☀️</Li>
+                                <li>☀️</li>
+                                <Li>☀️</Li>
+                                <li>☀️</li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul class="temp">
+                                <li>28°C</Li>
+                                <li>25°C</li>
+                                <Li>22°C</Li>
+                                <li>37°C</li>
+                                <Li>38°C</Li>
+                                <li>25°C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+<script src="src/index.js"></script>
+
+</html>
